@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.createEmployee = createEmployee;
 const crypto_1 = require("crypto");
 function generateRandomId() {
     return (0, crypto_1.randomBytes)(10).toString('hex');

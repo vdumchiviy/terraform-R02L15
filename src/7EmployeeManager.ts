@@ -1,7 +1,7 @@
 import {randomBytes} from 'crypto'
 import { create } from 'domain'
 
-type Employee = {
+export type Employee = {
     name: string
     id: string
     email: string
@@ -11,7 +11,7 @@ type Employee = {
 function generateRandomId() {
     return randomBytes(10).toString('hex');
 }
-function createEmployee(
+export function createEmployee(
     employeeName: string,
     salary: number
 ) : Employee {
